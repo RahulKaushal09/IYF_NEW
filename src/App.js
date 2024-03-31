@@ -54,7 +54,10 @@ function App() {
         <NavbarGlobal updateHighlight={updateHighlight} highlightStyle={highlightStyle} />
         <Routes>
           {getRoutes(routes)}
-          <Route element={<Navigate to="/home" />} />
+          <Route path="/" element={<Navigate to="/home" replace />} />
+          {/* Fallback redirect for any unmatched path */}
+          <Route path="*" element={<Navigate to="/home" replace />} />
+          <Route path='*' element={<Navigate to="/home" />} />
         </Routes>
         {/* <Footer /> */}
       </div>

@@ -29,6 +29,7 @@ const Home = ({ updateHighlight }) => {
   const [Conferences, setConferences] = useState(0);
 
   useEffect(() => {
+
     let intervalId1;
     let intervalId2;
     let intervalId3;
