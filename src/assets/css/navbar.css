@@ -1,0 +1,63 @@
+/* Custom Navbar Styles */
+.navbar {
+    /* background-color: whitesmoke; */
+    position: fixed !important;
+    top: 10px;
+    /* left: 0; */
+    width: 90% !important;
+    left: 50%;
+    /* Center the element relative to its parent */
+    transform: translateX(-50%);
+
+    z-index: 1030;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: saturate(200%) blur(30px) !important;
+    box-shadow: rgba(0, 0, 0, 0.05) 0rem 1.25rem 1.6875rem !important;
+    /* background-color:linea       r; */
+    /* Light background */
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.nav-link {
+    color: #555 !important;
+    /* Darker font color for better contrast */
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #007bff !important;
+    /* Highlight color on hover and for the active link */
+}
+
+/* Add more custom styles as needed */
+
+
+.highlight {
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    /* Adjust the height of the highlight */
+    background-color: #007bff;
+    /* Highlight color */
+    transition: all 0.3s ease-in-out;
+    /* Smooth transition */
+    border-radius: 5px;
+    /* Rounded corners */
+}
+
+/* Ensure the circular effect and adjust according to your design */
+.nav-link {
+    padding-bottom: 5px !important;
+    /* Adjust space to prevent overlap with the highlight */
+}
+
+@media (max-width: 768px) {
+    .highlight {
+        background: none !important;
+    }
+}

@@ -1,0 +1,123 @@
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-row {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    color: rgb(26, 115, 232);
+    /* Bootstrap primary color */
+    margin-bottom: 15px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+
+    /* Optional: For rounded corners */
+}
+
+.textleft {
+    text-align: left;
+}
+
+.textright {
+    text-align: right;
+}
+
+.about-title {
+    color: rgb(26, 115, 232)
+}
+
+.about-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+@media (max-width: 767px) {
+    .section-row {
+        flex-direction: column;
+    }
+
+    .col-md-6 {
+        width: 100%;
+    }
+
+    .section-title {
+        text-align: center;
+    }
+
+    .textleft {
+        text-align: justify !important;
+    }
+
+    .textright {
+        text-align: justify !important;
+    }
+
+    .img-fluid {
+        margin-bottom: 20px;
+    }
+
+    #beginning {
+        display: none;
+    }
+
+    #rath-yatra {
+        display: none;
+    }
+
+    #philosophy {
+        display: none;
+    }
+
+    #current-status {
+        display: none;
+    }
+}
+
+.backgroundimg_about {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.backgroundimg_about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Adjust the alpha value (0.5) to make it darker or lighter */
+    z-index: 2;
+}
+
+.backgroundimg_about {
+    background-image: url('../images/current.jpg');
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
