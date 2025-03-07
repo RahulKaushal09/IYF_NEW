@@ -37,8 +37,17 @@ i {
 .home-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
+}
+
+.carouselDiv {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .backgroundimg {
@@ -79,12 +88,12 @@ i {
     border: 0px solid rgba(0, 0, 0, 0.125);
     overflow: visible;
     width: 90%;
-    margin-top: -120px;
+    margin-top: -70px;
     display: flex;
     /* padding: 10px; */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     padding: 16px;
     border-radius: 0.75rem;
@@ -176,11 +185,12 @@ i {
     color: rgb(52, 71, 103);
     box-shadow: rgba(0, 0, 0, 0.14) 0rem 0.25rem 1.25rem 0rem, rgba(0, 187, 212, 0.4) 0rem 0.4375rem 0.625rem -0.3125rem;
     backface-visibility: hidden;
-    background: linear-gradient(195deg, rgba(73, 163, 241, 0.85), rgba(73, 163, 241, 0.85)) 0% 0% / cover, url("../images/rotating-card-bg-front1.jpg") transparent;
+    /* background: linear-gradient(195deg, rgba(73, 163, 241, 0.85), rgba(73, 163, 241, 0.85)) 0% 0% / cover, url("../images/rotating-card-bg-front1.jpg") transparent; */
+    background: linear-gradient(195deg, rgba(73, 163, 241, 0.85), rgba(73, 163, 241, 0.85)) 0% 0% / cover;
     border-radius: 0.5rem;
     background-position: center;
     background-size: contain;
-    height: 600px;
+    height: 500px;
 }
 
 .card-main {
@@ -197,6 +207,11 @@ i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.third-section {
+    margin-top: 50px !important;
+
 }
 
 .row {
@@ -303,9 +318,11 @@ i {
 .callout {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     margin: 0;
     text-align: left;
+
+    max-height: 180px;
     /* border-color: black; */
 }
 
@@ -349,6 +366,7 @@ i {
     /* background: url("../images/rotating-card-bg-front1.jpg") transparent; */
 
     background: linear-gradient(195deg, rgba(73, 163, 241, 0.40), rgba(73, 163, 241, 0.85)) 0% 0% / cover, url('https://iskcondwarka.org/wp-content/uploads/2022/02/food-for-life-banner-1484737928.jpg'), transparent;
+    /* background: linear-gradient(195deg, rgba(73, 163, 241, 0.40), rgba(73, 163, 241, 0.85)) 0% 0% / cover; */
     background-position: bottom center;
     background-size: cover;
     border-radius: 10px;
@@ -779,4 +797,42 @@ i {
     /* Adjust as needed */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* sidebar in dashboard
+ */
+
+#sidebar-wrapper {
+    background-color: #343a40;
+    min-height: 100vh;
+    padding: 0;
+    color: white;
+}
+
+.sidebar .nav-link {
+    color: white;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar .nav-link:hover {
+    background-color: #495057;
+}
+
+#page-content-wrapper {
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.main-content h2 {
+    margin-bottom: 20px;
+}
+
+.main-content section {
+    margin-bottom: 40px;
 }

@@ -1,6 +1,5 @@
-// import SignIn from "../src/layouts/pages/authentication/sign-in";
+import dashBoard from "../pages/dashboard";
 import Donate from "../pages/Donate";
-
 import Home from "../pages/home";
 import AboutUs from "../pages/aboutUs";
 import ContactUs from "../pages/contact";
@@ -12,10 +11,16 @@ const routes = [
     Component: SignInPage, // Use Component (capitalized) to indicate this is a component reference
   },
   {
+    key: "dashBoard",
+    route: "/dashBoard",
+    Component: dashBoard, // Use Component (capitalized) to indicate this is a component reference
+  },
+  {
     key: "donate",
     route: "/donate",
     Component: Donate,
   },
+
   {
     key: "home",
     route: "/home",

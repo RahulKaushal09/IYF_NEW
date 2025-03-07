@@ -4,9 +4,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import NavbarGlobal from './components/navbar';
 import React, { useState, useRef } from 'react';
-
-import routes from "../src/routes/routes.js";
+import AutoRotateCarousel from './components/AutoRotateCarousel';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import routes from "../src/routes/routes.js";
 
 function App() {
   const [highlightStyle, setHighlightStyle] = useState({});
@@ -31,6 +31,14 @@ function App() {
     // Calculate the position and size of the highlight based on the clicked tab
 
   };
+  const dashboardHighlight = (e) => {
+    const newStyle = {
+      left: 1292 + 'px',
+      width: 47 + 'px',
+    };
+    console.log(newStyle);
+    setHighlightStyle(newStyle);
+  }
 
   const getRoutes = (allRoutes) =>
     allRoutes.map((route) => {
@@ -43,7 +51,19 @@ function App() {
           />
         );
       }
-      // For other routes that don't need the special props
+
+      // if (route.route === '/Dashboard') {
+      //   // dashboardHighlight();
+      //   console.log("enetered");
+      //   return (
+      //     <Route
+      //       path={route.route}
+      //       element={<route.Component />}
+      //       key={route.key}
+      //     />
+      //   );
+      // }
+      // // For other routes that don't need the special props
       return (
         <Route path={route.route} element={<route.Component />} key={route.key} />
       );
@@ -52,11 +72,11 @@ function App() {
     <Router>
       <div className="App">
         <NavbarGlobal updateHighlight={updateHighlight} highlightStyle={highlightStyle} />
+        {/* <AutoRotateCarousel /> */}
+
         <Routes>
           {getRoutes(routes)}
           <Route path="/" element={<Navigate to="/home" replace />} />
-          {/* Fallback redirect for any unmatched path */}
-          <Route path="*" element={<Navigate to="/home" replace />} />
           <Route path='*' element={<Navigate to="/home" />} />
         </Routes>
         {/* <Footer /> */}
