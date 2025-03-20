@@ -9,7 +9,7 @@ import {
   faHandHoldingHeart,
 } from "@fortawesome/free-solid-svg-icons";
 import Donate from "./Donate/index.js";
-import Footer from '../components/footer.js';
+// import Footer from '../components/footer.js';
 import AutoRotateCarousel from "../components/AutoRotateCarousel.js";
 // import { useNavigate } from "react-router-dom";
 import {
@@ -360,7 +360,7 @@ const Home = ({ updateHighlight }) => {
           </div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

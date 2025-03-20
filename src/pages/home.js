@@ -9,7 +9,7 @@ import {
     faHandHoldingHeart,
 } from "@fortawesome/free-solid-svg-icons";
 import Donate from "./Donate/index.js";
-import Footer from '../components/footer_old.js';
+// import Footer from '../components/footer_old.js';
 import AutoRotateCarousel from "../components/AutoRotateCarousel.js";
 import Card from 'react-bootstrap/Card';
 // import { useNavigate } from "react-router-dom";
