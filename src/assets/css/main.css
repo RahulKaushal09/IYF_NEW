@@ -426,7 +426,7 @@ i {
 .hero-section-cta {
     position: relative;
     width: 100%;
-    min-height: 500px;
+    /* min-height: 500px; */
     /* Adjust based on your image's height */
     background: url('../images/rath_yatra.jpg') no-repeat center center/cover;
     /* Replace with the actual image URL if needed for web access */
