@@ -428,7 +428,7 @@ i {
     width: 100%;
     min-height: 500px;
     /* Adjust based on your image's height */
-    background: url('D:/GET IT DONE/Iskcon Seva/IYF/frontend/src/assets/images/rath_yatra.jpg') no-repeat center center/cover;
+    background: url('../images/rath_yatra.jpg') no-repeat center center/cover;
     /* Replace with the actual image URL if needed for web access */
     display: flex;
     justify-content: center;
