@@ -7,6 +7,7 @@ import React, { useState, useRef } from 'react';
 import AutoRotateCarousel from './components/AutoRotateCarousel';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import routes from "../src/routes/routes.js";
+import Footer from "./components/Footer.js";
 
 function App() {
   const [highlightStyle, setHighlightStyle] = useState({});
@@ -80,6 +81,7 @@ function App() {
           <Route path='*' element={<Navigate to="/home" />} />
         </Routes>
         {/* <Footer /> */}
+        <Footer />
       </div>
     </Router>
   );

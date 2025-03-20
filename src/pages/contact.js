@@ -3,7 +3,7 @@ import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../assets/css/main.css";
 import "../assets/css/aboutUs.css";
-import Footer from '../components/footer';
+import Footer from '../components/footer_old';
 
 // Sample data for sections
 
@@ -82,7 +82,7 @@ function ContactUs() {
           </Container>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
 
     </div>
   );

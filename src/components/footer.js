@@ -1,91 +1,38 @@
-
-import "../assets/css/footer.css"
-import iskconLogo from "../assets/images/brandWhite.jpg"
-function Footer() {
+import React from 'react';
+import '../assets/css/Footer_new.css'; // Import the CSS file
+import { FaFacebookF, FaInstagram, FaYoutube, FaWhatsapp } from "react-icons/fa"; // Import icons
+const Footer = () => {
     return (
-
-        <footer class="footer">
-            <div class="footer__addr">
-                <div style={{ width: "100%", display: "flex", alignItems: "center" }}>
-                    <img style={{ width: "20%", marginRight: "10px " }} src={iskconLogo} alt=""></img>
-                    <h1 class="footer__logo">Iskcon Youth Forum</h1>
+        <footer className="footer">
+            <div className="footer-top">
+                <div className="social-links">
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                        <FaFacebookF className="social-icon" />
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                        <FaInstagram className="social-icon" />
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                        <FaYoutube className="social-icon" />
+                    </a>
+                    <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer">
+                        <FaWhatsapp className="social-icon" />
+                    </a>
                 </div>
-
-                <p class="footerp" >ISKCON is a non-profit organization that works for social welfare. It is located in the heart of a cosmopolitan city. This center is determinedly trying to build up society’s spiritual and ethical fabric with the help of different cultural and spiritual educational programs.</p>
-                {/* <h2>Visit</h2> */}
-
-                {/* <address>
-                    Hare Krishna dham, ISKCON Temple, Dakshin Marg, 36B, Sector-36B, Chandigarh, 160036
-
-                    <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
-                </address> */}
+                <nav className="footer-nav">
+                    <a href="#our-inspiration">Our Inspiration</a>
+                    <a href="#contact">Contact</a>
+                    <a href="mailto:example@gmail.com">Gmail</a>
+                    <a href="#about-us">About Us</a>
+                    <a href="#quick-links">Quick Links</a>
+                </nav>
             </div>
-
-            <ul class="footer__nav">
-                <li class="nav__item">
-                    <h2 class="footer__logo">Visiting times</h2>
-                    <ul class="nav__ul">
-                        <li>
-                            Mon – Sat
-                        </li>
-
-                        <li>
-                            <a>10.00am – 1.00pm
-                            </a>
-                        </li>
-
-                        <li>
-                            <a >4.00pm – 7.30pm</a>
-                        </li>
-                        <li>
-                            Sun
-                        </li>
-
-                        <li>
-                            <a>10.00am – 7.30pm
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav__item">
-                    <h2 class="footer__logo">Contact Info</h2>
-                    <address>
-                        Hare Krishna dham, ISKCON Temple, Dakshin Marg, 36B, Sector-36B, Chandigarh, 160036
-
-                        <a class="footer__btn" href="mailto:iskconyouthforum.chd@gmail.com">Email Us</a>
-                        <a class="footer__btn" href="tel:+918126439168">Contact Us</a>
-                    </address>
-                </li>
-
-                <li class="nav__item">
-                    <h2 class="footer__logo"> Please Visit</h2>
-                    <ul class="nav__ul">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-
-                        <li>
-                            <a href="#">About Us</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Contact Us</a>
-                        </li>
-                    </ul>
-                </li>
-
-
-            </ul>
-
-            <div class="legal" >
-                <p>&copy; 2024 IYF. All rights reserved.</p>
-
-
+            <div className="footer-bottom">
+                {/* <p>OUR INSPIRATION, CRAFTED WITH ♥ IN YOUR CITY</p> */}
+                <p>© IYF 2025 | ALL RIGHTS RESERVED</p>
             </div>
         </footer>
-
     );
-}
-
+};
 
 export default Footer;

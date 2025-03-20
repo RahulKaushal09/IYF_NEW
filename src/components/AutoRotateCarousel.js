@@ -3,9 +3,9 @@ import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Import your images
-import slide1 from '../assets/images/update/Website Banner/Carousal 1.png';
-import slide2 from '../assets/images/update/Website Banner/Carousal 2.png';
-import slide3 from '../assets/images/update/Website Banner/Carousal3.png';
+import slide1 from '../assets/images/update/Website Banner/MainCarousal1.png';
+import slide2 from '../assets/images/update/Website Banner/MainCarousal2.png';
+import slide3 from '../assets/images/update/Website Banner/MainCarousal3.png';
 
 const AutoRotateCarousel = () => {
     const [index, setIndex] = useState(0);

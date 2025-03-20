@@ -9,7 +9,7 @@ import {
     faHandHoldingHeart,
 } from "@fortawesome/free-solid-svg-icons";
 import Donate from "./Donate/index.js";
-import Footer from '../components/footer.js';
+import Footer from '../components/footer_old.js';
 import AutoRotateCarousel from "../components/AutoRotateCarousel.js";
 import Card from 'react-bootstrap/Card';
 // import { useNavigate } from "react-router-dom";
@@ -270,7 +270,35 @@ const Home = ({ updateHighlight }) => {
                     <h2>Our Programs </h2>
                     <Gallery />
                     <h2 style={{ marginTop: "50px" }}>Testimonials</h2>
-
+                    <div style={{ width: "100%", margin: "0 auto 50px" }}>
+                        <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, overflow: "hidden" }}>
+                            <iframe
+                                style={{
+                                    position: "absolute",
+                                    top: 0,
+                                    left: 0,
+                                    width: "100%",
+                                    height: "100%"
+                                }}
+                                src="https://www.youtube.com/embed/teGMjIKo6Ss"
+                                title="Kurukshetra One day Retreat - Glimpses"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                    </div>
+                    <div class="hero-section-cta">
+                        <div class="call-to-action-cta">
+                            <h1>Call to Action - Join Us!</h1>
+                            <p>We'd love for you to be a part of our journey!</p>
+                            <div class="buttons-cta">
+                                <button class="btn-cta btn-yellow-cta">Youth Patron</button>
+                                <button class="btn-cta btn-green-cta">Volunteer</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 

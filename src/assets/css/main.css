@@ -423,6 +423,84 @@ i {
     background-color: black;
     opacity: 0.5
 } */
+.hero-section-cta {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    /* Adjust based on your image's height */
+    background: url('D:/GET IT DONE/Iskcon Seva/IYF/frontend/src/assets/images/rath_yatra.jpg') no-repeat center center/cover;
+    /* Replace with the actual image URL if needed for web access */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Optional: Improves text readability */
+}
+
+.hero-section-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black layer */
+    z-index: 1;
+}
+
+.call-to-action-cta {
+    padding: 20px;
+    position: relative;
+    /* Ensure content stays above the overlay */
+    z-index: 2;
+    /* Bring content above the black layer */
+}
+
+.call-to-action-cta h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.call-to-action-cta p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.buttons-cta {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    /* Ensure buttons stay above the overlay */
+}
+
+.btn-cta {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-yellow-cta {
+    background-color: #ffcc00;
+    /* Similar to the yellow "DONATE" button */
+}
+
+.btn-green-cta {
+    background-color: #00cc99;
+    /* Similar to the green "TAKE ACTION" button */
+}
+
+.btn-cta:hover {
+    opacity: 0.9;
+}
 
 .section2-second-text {
 
